@@ -139,7 +139,7 @@ private class GreeterImpl extends GreeterGrpc.GreeterImplBase {
 
 同じフォルダの中で、`src/main/java/io/grpc/examples/helloworld/HelloWorldClient.java`を開いてください。次の関数を追加します。
 
-``` protobuf
+``` proto
 public void greet(String name) {
   logger.info("Will try to greet " + name + " ...");
   HelloRequest request = HelloRequest.newBuilder().setName(name).build();
